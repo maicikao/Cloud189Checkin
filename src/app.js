@@ -18,11 +18,11 @@ const logger = log4js.getLogger();
 // process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'
 const superagent = require("superagent");
 const { CloudClient } = require("cloud189-sdk");
-const serverChan = require("./push/serverChan");
-const telegramBot = require("./push/telegramBot");
-const wecomBot = require("./push/wecomBot");
-const wxpush = require("./push/wxPusher");
-const accounts = require("../accounts");
+const serverChan = require("./serverChan");
+const telegramBot = require("./telegramBot");
+const wecomBot = require("./wecomBot");
+const wxpush = require("./wxPusher");
+const accounts = require("./accounts");
 
 const mask = (s, start, end) => s.split("").fill("*", start, end).join("");
 
